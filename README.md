@@ -7,13 +7,16 @@ To install the project, you just have to run `npm install` to get all the depend
 # Running the tests
 After installing the dependencies you can run the tests with this command `npm run test` for in memory test or `npm run test:critical` for running critical tests with mongoDB.
 
+
 # Using commands
+<pre>
 You can run these commands when in the src folder:
 ./fleet create <userId> # returns fleetId on the standard output
 ./fleet register-vehicle <fleetId> <vehiclePlateNumber>
 ./fleet localize-vehicle <fleetId> <vehiclePlateNumber> lat lng [alt]
-
+</pre>
 # Project structure
+<pre>
 src
     App             # Contains the commands and their handlers and some queries     
         commands
@@ -29,7 +32,7 @@ src
 cucumber.js         # Cucumber configuration
 package.json        # Dependencies and scripts
 readme.md           # This file
-
+</pre>
 # Step 3
 For code quality, you can use some tools : which one and why (in a few words) ?
 I can use linters, code formatters, code analyzers and syntax checkers such as eslint, prettier, sonarQube or code spell chacker
